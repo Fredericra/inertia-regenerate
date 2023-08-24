@@ -1,0 +1,39 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@import "aos/dist/aos.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+
+}
+@layer components {
+    .link{
+        @apply font-bold text-indigo-800 hover:text-orange-950;
+    }
+    .input{
+        @apply h-9 rounded-full bg-gray-300 text-gray-600 font-bold indent-10 placeholder:text-gray-600 outline outline-none w-full placeholder:text-sm;
+    }
+    .media{
+        @apply grid sm:grid-cols-1 md:grid-cols-12;
+    }
+    .btn{
+        @apply px-2 py-1 rounded-lg bg-gradient-to-r to-indigo-600 from-purple-700 text-white shadow-lg shadow-indigo-950 font-bold hover:from-orange-950 hover:to-indigo-900;
+    }
+}
+@layer utilities {
+    .y{
+        scrollbar-width: none;
+    }
+    @media screen and (max-width:720px) {
+        .left{
+            display:inline-block;
+        }
+    }
+    @media screen and (max-width:1018px) {
+        .left{
+            display: none;
+        }
+    }
+   
+  
+}
